@@ -1,0 +1,59 @@
+  .get-started-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh; 
+    text-align: center; 
+  }
+  
+  .isa-options {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin-top: 20px;
+  }
+  
+  .isa-option-button {
+    width: 500px; 
+    padding: 20px; 
+    margin: 10px 0; 
+    border: 1px solid black; 
+    border-radius: 50px; 
+    background-color: white; 
+    color: black; 
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s; 
+    font-size: 1.5rem; 
+  }
+  
+  .get-started-container h2 {
+    font-size: 2rem; 
+  }
+  
+  .isa-option-button span {
+      color: rgb(220, 30, 131); 
+  }
+  
+  .isa-option-button:hover {
+    border-color: rgb(220, 30, 131);
+  }
+  
+  .isa-option-button:disabled {
+    color: rgba(0, 0, 0, 0.5); 
+    background-color: white; 
+    border: 1px solid black; 
+    position: relative; 
+    cursor: not-allowed; 
+  }
+  
+  .isa-option-button:disabled::after {
+    content: ' Coming Soon'; 
+    color: rgb(220, 30, 131); 
+    font-weight: bold; 
+    position: absolute; 
+    right: 15px; 
+  }
